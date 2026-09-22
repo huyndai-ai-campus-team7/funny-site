@@ -36,4 +36,4 @@
 ### 브랜치 
 - {개발 유형}/{기능 이름}/{본인 이름}
 - EX) feat/add-site/seohyun1024
-feat/add-site/qoxopa
+- feat/add-site/qoxopa

@@ -15,13 +15,22 @@
   </header>
 
   <main class="container">
+
+    <nav class="category-filter" aria-label="카테고리 필터">
+      <button type="button" class="filter-btn active" data-filter="all">전체</button>
+      <button type="button" class="filter-btn" data-filter="hackathon">해커톤·공모전</button>
+      <button type="button" class="filter-btn" data-filter="tool">학습·도구</button>
+      <button type="button" class="filter-btn" data-filter="entertainment">엔터테인먼트</button>
+    </nav>
+
     <ul class="card-grid">
 
       <!-- ▼▼▼▼▼ 카드 하나 시작 — 이 블록을 복사해서 쓰세요 ▼▼▼▼▼ -->
-      <li class="card">
+      <li class="card" data-category="hackathon">
         <a class="card-link" href="https://skhynix-hackathon.com/ai-2026">
           <span class="card-thumb" style="--thumb:#ffe4c2">📚</span>
           <span class="card-body">
+            <span class="card-category cat-hackathon">해커톤·공모전</span>
             <strong class="card-title">SK하이닉스 해커톤</strong>
             <span class="card-summary">
               현대AI서비스 개발 교육에 유용한 SK하이닉스 해커톤
@@ -32,23 +41,25 @@
       </li>
       <!-- ▲▲▲▲▲ 카드 하나 끝 ▲▲▲▲▲ -->
 
-       <li class="card">
+      <li class="card" data-category="tool">
         <a class="card-link" href="https://www.wolframalpha.com/">
           <span class="card-thumb" style="--thumb:#B8AFE1">✖️</span>
           <span class="card-body">
+            <span class="card-category cat-tool">학습·도구</span>
             <strong class="card-title">울프럼 알파</strong>
             <span class="card-summary">
               여러 가지 함수들을 그래프로 시각화해서 보여주는 사이트
             </span>
             <span class="card-meta">추천 · 이서현</span>
-              </span>
+          </span>
         </a>
       </li>
 
-      <li class="card">
+      <li class="card" data-category="hackathon">
         <a class="card-link" href="https://www.univ20.com/ContestCalendar/Detail/1922">
           <span class="card-thumb" style="--thumb:#ffe4c2">📚</span>
           <span class="card-body">
+            <span class="card-category cat-hackathon">해커톤·공모전</span>
             <strong class="card-title">원티드 해커톤</strong>
             <span class="card-summary">
               현대AI서비스 개발 교육에 유용한 일반인도 참여가능한 해커톤
@@ -58,19 +69,26 @@
         </a>
       </li>
 
-      <li class="card">
+      <li class="card" data-category="tool">
         <a class="card-link" href="https://matrixcalc.org/ko/">
           <span class="card-thumb" style="--thumb:#80E7E7">🧮</span>
           <span class="card-body">
+            <span class="card-category cat-tool">학습·도구</span>
             <strong class="card-title">행렬 계산기</strong>
             <span class="card-summary">
               행렬 계산하기 귀찮을 때 계산해주는 사이트
             </span>
             <span class="card-meta">추천 · 이서현</span>
+          </span>
+        </a>
+      </li>
+
+      <li class="card" data-category="hackathon">
         <a class="card-link" href="https://sotong.go.kr/front/epilogue/epilogueBbsViewPage.do?bbs_id=8efb3e6103764379bfdd36c331e6334c&searchkey=&searchtxt=&miv_pageNo=1">
           <span class="card-thumb" style="--thumb:#ffe4c2">📚</span>
           <span class="card-body">
-            <strong class="card-title">고용24 AI해커톤 /strong>
+            <span class="card-category cat-hackathon">해커톤·공모전</span>
+            <strong class="card-title">고용24 AI해커톤</strong>
             <span class="card-summary">
               현대AI서비스 개발 교육에 유용한 일반인도가능한 고용관련 AI해커톤
             </span>
@@ -79,34 +97,40 @@
         </a>
       </li>
 
-      <li class="card">
+      <li class="card" data-category="entertainment">
         <a class="card-link" href="https://www.netflix.com/kr-en/">
           <span class="card-thumb" style="--thumb:#F6CDCD">🎬</span>
           <span class="card-body">
+            <span class="card-category cat-entertainment">엔터테인먼트</span>
             <strong class="card-title">넷플릭스</strong>
             <span class="card-summary">
-              시간 가볍게 때우기 좋은 사이트 
+              시간 가볍게 때우기 좋은 사이트
             </span>
             <span class="card-meta">추천 · 이서현</span>
           </span>
         </a>
       </li>
 
-      <li class="card">
+      <li class="card" data-category="tool">
         <a class="card-link" href="https://nomadcoders.co/">
           <span class="card-thumb" style="--thumb:#FFF7BF">💻</span>
           <span class="card-body">
+            <span class="card-category cat-tool">학습·도구</span>
             <strong class="card-title">노마드 코더</strong>
             <span class="card-summary">
-              무료 코딩 강의 입문용으로 좋은 사이트 
+              무료 코딩 강의 입문용으로 좋은 사이트
             </span>
             <span class="card-meta">추천 · 이서현</span>
+          </span>
+        </a>
+      </li>
 
-       <li class="card">
+      <li class="card" data-category="hackathon">
         <a class="card-link" href="https://ainnov.co.kr/pac2026">
           <span class="card-thumb" style="--thumb:#ffe4c2">📚</span>
           <span class="card-body">
-            <strong class="card-title">PAC AI해커톤 /strong>
+            <span class="card-category cat-hackathon">해커톤·공모전</span>
+            <strong class="card-title">PAC AI해커톤</strong>
             <span class="card-summary">
               현대AI서비스 개발 교육에 유용한 일반인도가능한 고용관련 PAC AI 11월
             </span>
@@ -116,11 +140,40 @@
       </li>
 
     </ul>
+
+    <p class="filter-empty" hidden>이 카테고리에는 아직 카드가 없어요.</p>
+
   </main>
 
   <footer class="site-foot">
     깃 · 깃허브 특강 팀 프로젝트
   </footer>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.filter-btn');
+      var cards = document.querySelectorAll('.card[data-category]');
+      var emptyMsg = document.querySelector('.filter-empty');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          var filter = btn.dataset.filter;
+          var visibleCount = 0;
+
+          cards.forEach(function (card) {
+            var match = filter === 'all' || card.dataset.category === filter;
+            card.classList.toggle('is-hidden', !match);
+            if (match) visibleCount++;
+          });
+
+          emptyMsg.hidden = visibleCount !== 0;
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

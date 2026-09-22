@@ -185,7 +185,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -223,7 +224,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .card-body {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 20px 22px 24px;
 }
 
@@ -242,21 +245,31 @@ a { color: inherit; text-decoration: none; }
 .card-category.cat-entertainment { background: #fbe2e6; color: #b13a52; }
 
 .card-title {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 19px;
+  line-height: 1.3;
   font-weight: 700;
+  min-height: 2.6em;
   margin-bottom: 7px;
 }
 
 .card-summary {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 15px;
+  line-height: 1.65;
   color: var(--ink-soft);
-  min-height: 48px;
+  min-height: calc(15px * 1.65 * 2);
 }
 
 .card-meta {
   display: inline-block;
+  align-self: flex-start;
   margin-top: 14px;
   padding: 4px 12px;
   border-radius: 999px;
